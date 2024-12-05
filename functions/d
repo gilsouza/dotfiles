@@ -4,12 +4,12 @@
 #
 # Type:
 #
-#   c <tab>
+#   d <tab>
 #
 # ...to autocomplete on all of your projects in the directories specified in
-# `functions/_c`. Typically I'm using it like:
+# `functions/_d`. Typically I'm using it like:
 #
-#    c holm<tab>/bo<tab>
+#    d holm<tab>/bo<tab>
 #
 # ...to quickly jump into holman/boom, for example.
 

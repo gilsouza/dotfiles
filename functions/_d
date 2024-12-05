@@ -1,0 +1,4 @@
+#compdef d
+\_files -W $PROJECTS -/
+
+# See further documentation in `functions/d`.
