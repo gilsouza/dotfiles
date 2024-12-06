@@ -42,3 +42,11 @@ cask 'arc'
 cask 'zoom'
 cask 'proxyman'
 cask "font-meslo-lg-nerd-font"
+cask "vysor"
+cask "cleanshot"
+cask "logitech-g-hub"
+cask "spotify"
+cask "menuwhere"
+cask "rectangle"
+cask "textsniper"
+cask "bartender"
