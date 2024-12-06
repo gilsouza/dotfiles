@@ -1,6 +1,7 @@
 cask_args appdir: '/Applications'
 
 tap 'homebrew/bundle'
+tap 'sdkman/tap'
 
 brew 'imagemagick'
 brew 'wget'
@@ -21,8 +22,6 @@ brew 'pyenv'
 brew 'rbenv'
 brew 'watchman'
 brew 'zsh'
-brew 'zsh-autosuggestions'
-brew 'zsh-syntax-highlighting'
 brew 'coreutils'
 
 cask 'android-studio'
@@ -41,12 +40,14 @@ cask 'mockoon'
 cask 'arc'
 cask 'zoom'
 cask 'proxyman'
-cask "font-meslo-lg-nerd-font"
-cask "vysor"
-cask "cleanshot"
-cask "logitech-g-hub"
-cask "spotify"
-cask "menuwhere"
-cask "rectangle"
-cask "textsniper"
-cask "bartender"
+cask 'font-meslo-lg-nerd-font'
+cask 'vysor'
+cask 'cleanshot'
+cask 'logitech-g-hub'
+cask 'spotify'
+cask 'menuwhere'
+cask 'rectangle'
+cask 'textsniper'
+cask 'bartender'
+cask 'slack'
+cask 'sdkman-cli'
