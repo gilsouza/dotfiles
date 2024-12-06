@@ -18,7 +18,22 @@ then
   then
     /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Linuxbrew/install/HEAD/install.sh)"
   fi
+else
+  # Upgrade homebrew
+  echo "› brew update"
+  brew update
 
+  echo "› brew upgrade"
+  brew upgrade
 fi
+
+original_dir=$(pwd)
+
+cd "$(dirname "$0")"
+
+echo "› brew bundle"
+brew bundle --file=./Brewfile
+
+cd "$original_dir"
 
 exit 0
