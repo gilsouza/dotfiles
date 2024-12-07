@@ -7,7 +7,7 @@ if [[ ! -d ~/.oh-my-zsh/ ]]; then
 fi
 
 # Install Zinit
-if [[ ! -d ~/~/.local/share/zinit/ ]]; then
+if [[ ! -d ~/.local/share/zinit/ ]]; then
   bash -c "$(curl --fail --show-error --silent --location https://raw.githubusercontent.com/zdharma-continuum/zinit/HEAD/scripts/install.sh)"
   zinit self-update
 else
