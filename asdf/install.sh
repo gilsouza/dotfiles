@@ -1,6 +1,6 @@
-echo "› Installing asdf"
-
 if [[ ! -d ~/.asdf/ ]]; then
+  echo "› Installing asdf"
+
   git clone https://github.com/asdf-vm/asdf.git ~/.asdf --branch v0.14.1
 
   # see more on https://github.com/asdf-community/asdf-python
@@ -14,6 +14,6 @@ if [[ ! -d ~/.asdf/ ]]; then
 
   # see more on https://github.com/halcyon/asdf-java
   asdf plugin-add java https://github.com/halcyon/asdf-java.git
+else
+  echo "› Skipping asdf installation"
 fi
-
-
