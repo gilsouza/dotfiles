@@ -1,3 +1,6 @@
+export ZSH="$HOME/.oh-my-zsh"
+source $ZSH/oh-my-zsh.sh
+
 # shortcut to this dotfiles path is $DOTFILE
 export DOTFILE=$HOME/.dotfiles
 
