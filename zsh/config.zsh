@@ -2,8 +2,8 @@ export LSCOLORS="exfxcxdxbxegedabagacad"
 export CLICOLOR=true
 
 # shellcheck disable=SC2206
-fpath=($ZSH/functions $fpath)
-autoload -U "$ZSH/functions/*(:t)"
+fpath=($DOTFILE/functions $fpath)
+# autoload -U "$DOTFILE/functions/*(:t)"
 
 export SAVEHIST=10000
 export HISTSIZE=10000
