@@ -1,9 +1,6 @@
 export LSCOLORS="exfxcxdxbxegedabagacad"
 export CLICOLOR=true
 
-autoload -U compinit
-compinit
-
 # shellcheck disable=SC2206
 fpath=($ZSH/functions $fpath)
 autoload -U "$ZSH/functions/*(:t)"
@@ -11,9 +8,6 @@ autoload -U "$ZSH/functions/*(:t)"
 export SAVEHIST=10000
 export HISTSIZE=10000
 export HISTFILE=~/.zsh_history
-
-zstyle ':completion:*' matcher-list 'm:{a-z}={A-Z}'
-zstyle ':completion:*' insert-tab pending
 
 setopt NO_BG_NICE # don't nice background tasks
 setopt NO_HUP
