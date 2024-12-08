@@ -45,3 +45,9 @@
         command = /opt/homebrew/bin/spaceman-diff
 [init]
 	defaultBranch = main
+[commit]
+        gpgsign = true
+[tag]
+        forceSignAnnotated = true
+[gpg]
+        program = /usr/local/MacGPG2/bin/gpg2
