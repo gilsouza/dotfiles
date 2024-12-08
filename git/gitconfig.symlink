@@ -5,9 +5,16 @@
         protocol = https
 [alias]
         co = checkout
-        promote = !$ZSH/bin/git-promote
-        wtf     = !$ZSH/bin/git-wtf
-        rank-contributors = !$ZSH/bin/git-rank-contributors
+        promote = !$DOTFILE/bin/git-promote
+        wtf     = !$DOTFILE/bin/git-wtf
+        rank-contributors = !$DOTFILE/bin/git-rank-contributors
+        #	lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
+	lg = log --graph --pretty=format:'%C(yellow)%h%C(cyan)%d%Creset %s %C(white)- %an, %ar%Creset'
+	st = status -sb
+	last = log -1 HEAD --stat
+	cm = commit -m
+	rv = remote -v
+	se = !git rev-list --all | xargs git grep -F
         count   = !git shortlog -sn
 [color]
         diff = auto
@@ -15,8 +22,9 @@
         branch = auto
         ui = true
 [core]
+        autocrlf = input
         excludesfile = ~/.gitignore
-        editor = vim
+        editor = nano
 [apply]
         whitespace = nowarn
 [mergetool]
@@ -24,7 +32,7 @@
 [difftool]
         prompt = false
 [help]
-        autocorrect = 1
+        autocorrect = 20
 [push]
         # See `git help config` (search for push.default)
         # for more information on different options of the below setting.
@@ -34,7 +42,6 @@
 [credential]
 	helper = osxkeychain
 [diff "spaceman-diff"]
-  command = /opt/homebrew/bin/spaceman-diff
-
+        command = /opt/homebrew/bin/spaceman-diff
 [init]
 	defaultBranch = main
