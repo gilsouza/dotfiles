@@ -57,6 +57,3 @@ defaults write com.apple.finder _FXSortFoldersFirst -bool true
 # Set Menu Bar
 defaults write com.apple.menuextra.clock DateFormat -string "\"EEE h:mm:ss\""
 defaults write NSGlobalDomain _HIHideMenuBar -bool true
-
-# Set the timezone; see `sudo systemsetup -listtimezones` for other values
-sudo systemsetup -settimezone "America/Sao_Paulo" > /dev/null
