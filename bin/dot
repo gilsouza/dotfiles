@@ -51,5 +51,10 @@ $DOTFILE/macos/set-defaults.sh
 $DOTFILE/homebrew/install 2>&1
 
 # Install software
-echo "› script/install"
 $DOTFILE/script/install
+
+# Reload the shell
+source ~/.zshrc
+
+# Post install software
+$DOTFILE/script/post_install

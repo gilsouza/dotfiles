@@ -1,0 +1,10 @@
+#!/usr/bin/env bash#!/usr/bin/env bash
+#
+# Run all dotfiles post installers.
+
+set -e
+
+echo "› post installing topics in $(pwd -P)"
+
+# find the post installers and run them iteratively
+find . -name post_install.sh | while read installer ; do sh -c "${installer}" ; done
