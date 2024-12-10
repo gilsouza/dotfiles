@@ -54,7 +54,7 @@ $DOTFILE/homebrew/install 2>&1
 $DOTFILE/script/install
 
 # Reload the shell
-source ~/.zshrc
+#source ~/.zshrc
 
 # Post install software
 $DOTFILE/script/post_install
