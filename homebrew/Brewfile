@@ -19,6 +19,7 @@ brew 'kubernetes-cli'
 brew 'watchman'
 brew 'zsh'
 brew 'coreutils'
+brew 'git-lfs'
 
 cask 'android-studio'
 cask 'gpg-suite'
