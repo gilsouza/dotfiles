@@ -20,6 +20,7 @@ brew 'watchman'
 brew 'zsh'
 brew 'coreutils'
 brew 'git-lfs'
+brew 'xcodesorg/made/xcodes'
 
 cask 'android-studio'
 cask 'gpg-suite'
